@@ -4,6 +4,7 @@ public abstract class Tile
 {
    private String owner;
    private ArrayList<Tile> borders;
+   
    public Tile()
    {
       owner = null;
