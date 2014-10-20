@@ -7,7 +7,6 @@ public abstract class Province extends Tile
    private boolean famine;
    private boolean rebellion;
    private String home_of;
-   
    public Province()
    {
       city = null;
@@ -16,9 +15,9 @@ public abstract class Province extends Tile
       rebellion = false;
       
    }
-   public Province(City c, String own,String home)
+   public Province(String nomen,City c, String own,String home)
    {
-      super(own);
+      super(nomen, own);
       city = c;
       home_of = home;
    }
