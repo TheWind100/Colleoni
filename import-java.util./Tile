@@ -4,16 +4,17 @@ public abstract class Tile
 {
    private String owner;
    private ArrayList<Tile> borders;
-   
+   private String name;
    public Tile()
    {
       owner = null;
       borders = null;
    }
-   public Tile(String o)
+   public Tile(String n, String o)
    {
       owner = o;
       borders = null;
+      name = n;
    }
    public void addBorder(Tile border)
    {
