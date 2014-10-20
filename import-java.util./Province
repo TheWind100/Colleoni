@@ -1,0 +1,24 @@
+import java.util.*;
+// kyle
+public abstract class Province extends Tile
+{
+   private City city;
+   private Unit unit;
+   private boolean famine;
+   private boolean rebellion;
+   private String home_of;
+   public Province()
+   {
+      city = null;
+      unit = null;
+      famine = false;
+      rebellion = false;
+      
+   }
+   public Province(City c, String own,String home)
+   {
+      super(own);
+      city = c;
+      home_of = home;
+   }
+}
