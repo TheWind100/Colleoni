@@ -1,0 +1,20 @@
+// Jimsteroni
+
+public class Sea extends Tile
+{
+   private Fleet fleet;
+   private ArrayList<Cities> Ports;
+   
+   public Sea()
+   {
+      fleet = null;
+      ports = null;
+   }
+   
+   public Sea( String name, String owner )
+   {
+      Super( name, owner );
+      fleet = null;
+      ports = null;
+   }
+}
