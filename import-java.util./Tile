@@ -1,0 +1,21 @@
+import java.util.*;
+// kyle
+public abstract class Tile
+{
+   private String owner;
+   private ArrayList<Tile> borders;
+   public Tile()
+   {
+      owner = null;
+      borders = null;
+   }
+   public Tile(String o)
+   {
+      owner = o;
+      borders = null;
+   }
+   public void addBorder(Tile border)
+   {
+      borders.add(border);
+   }
+}
