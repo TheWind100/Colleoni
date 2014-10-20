@@ -7,6 +7,7 @@ public abstract class Province extends Tile
    private boolean famine;
    private boolean rebellion;
    private String home_of;
+   
    public Province()
    {
       city = null;
