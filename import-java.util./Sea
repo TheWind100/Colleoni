@@ -5,7 +5,7 @@ import java.util.*;
 public class Sea extends Tile
 {
    private Fleet fleet;
-   private ArrayList<Cities> Ports;
+   private ArrayList<Cities> ports;
    
    public Sea()
    {
@@ -15,7 +15,7 @@ public class Sea extends Tile
    
    public Sea( String name, String owner )
    {
-      Super( name, owner );
+      super( name, owner );
       fleet = null;
       ports = null;
    }
