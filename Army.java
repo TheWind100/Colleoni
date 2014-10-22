@@ -17,7 +17,7 @@ public class Army extends Unit
       super(own);
       province = prov;
    }
-   public Province setProvince(Province prov)
+   public String setProvince(Province prov)
    {
       String temp = province.getName();
       province = prov;
