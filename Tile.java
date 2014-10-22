@@ -34,4 +34,8 @@ public abstract class Tile
    {
       return owner;
    }
+   public ArrayList<Tile> getBorders()
+   {
+      return borders;
+   }
 }

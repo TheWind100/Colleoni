@@ -15,4 +15,12 @@ public class Sea extends Tile
       fleet = null;
       ports = null;
    }
+   public void setFleet (Fleet boat)
+   {
+      fleet = boat;
+   }
+   public Fleet getFleet()
+   {
+      return fleet;
+   }
 }
