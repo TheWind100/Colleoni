@@ -1,4 +1,4 @@
-//kyle
+// kyle
 public abstract class Unit
 {
    private String owner;
@@ -15,5 +15,9 @@ public abstract class Unit
       String temp = owner;
       owner = own;
       return temp;
+   }
+   public String getOwner() // Jimsteroni
+   {
+      return owner;
    }
 }

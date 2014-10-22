@@ -23,4 +23,8 @@ public class Army extends Unit
       province = prov;
       return temp;
    }
+   public Province getProvince()
+   {
+      return province;
+   }
 }

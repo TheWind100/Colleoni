@@ -12,4 +12,14 @@ public class Fleet extends Unit
       super(own);
       sea = null;
    }
+   public Tile setTile()
+   {
+      return sea;
+   }
+   public Tile setTile( Tile newSea )
+   {
+      Tile temp = sea;
+      sea = newSea;
+      return temp;   
+   }
 }
