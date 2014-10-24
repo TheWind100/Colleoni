@@ -3,17 +3,17 @@ import java.util.*;
 public class Sea extends Tile
 {
    private Fleet fleet;
-   private ArrayList<City> ports;
+   //private ArrayList<Province> ports;
    public Sea()
    {
       fleet = null;
-      ports = null;
+      //ports = null;
    }
    public Sea( String name, String owner )
    {
       super( name, owner );
       fleet = null;
-      ports = null;
+      //ports = null;
    }
    public void setFleet (Fleet boat)
    {
@@ -23,4 +23,8 @@ public class Sea extends Tile
    {
       return fleet;
    }
+   /*public void addPort(Province port)
+   {
+      ports.add(port);
+   }*/
 }

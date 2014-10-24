@@ -50,4 +50,8 @@ public class City
    {
       return unit;
    }
+   public void setUnit(Garrison garrison)
+   {
+      unit = garrison;
+   }
 }
