@@ -9,6 +9,13 @@ public abstract class Tile
    {
       owner = null;
       borders = null;
+      name = null;
+   }
+   public Tile(String n)
+   {
+      owner = null;
+      borders = null;
+      name = n;
    }
    public Tile(String n, String o)
    {

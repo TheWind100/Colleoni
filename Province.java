@@ -8,7 +8,6 @@ public abstract class Province extends Tile
    private boolean famine;
    private boolean rebellion;
    private String home_of;
-   private Sea port;
    //start constructors
    public Province()
    {
@@ -17,40 +16,36 @@ public abstract class Province extends Tile
       unit = null;
       famine = false;
       rebellion = false;
-      port = null;
       fleet = null;
    }
-   public Province(String nomen, City c, Sea harbor, String own, String home)
+   public Province(String nomen, String home)
    {
-      super(nomen, own);
-      city = c;
-      unit = null;
-      home_of = home;
-      famine = false;
-      rebellion = false;
-      port = harbor;
-      fleet = null;
-   }
-   public Province(String nomen, String own, String home)
-   {
-      super(nomen, own);
+      super(nomen);
       city = null;
       unit = null;
       home_of = home;
       famine = false;
       rebellion = false;
-      port = null;
       fleet = null;
    }
-   public Province(String nomen, City c, String own, String home)
+   public Province(String nomen)
    {
-      super(nomen, own);
+      super(nomen);
+      city = null;
+      unit = null;
+      home_of = null;
+      famine = false;
+      rebellion = false;
+      fleet = null;
+   }
+   public Province(String nomen, City c, String home)
+   {
+      super(nomen);
       city = c;
       unit = null;
       home_of = home;
       famine = false;
       rebellion = false;
-      port = null;
    }
    // end constructors
    //start famine + rebellion methods

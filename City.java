@@ -6,6 +6,7 @@ public class City
    private boolean famine;
    private Province province;
    private String owner;
+   private Sea port;
    //start constructors
    public City()
    {
@@ -13,6 +14,7 @@ public class City
       unit = null;
       famine = false;
       rebellion = false;
+      port = null;
    }
    public City(Province p)
    {
@@ -20,6 +22,7 @@ public class City
       unit = null;
       famine = false;
       rebellion = false;
+      port = null;
    }
    //end constructors
    public String setOwner(String new_owner)
@@ -53,5 +56,9 @@ public class City
    public void setUnit(Garrison garrison)
    {
       unit = garrison;
+   }
+   public void addPort(Sea p)
+   {
+      port = p;
    }
 }
