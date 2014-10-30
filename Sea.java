@@ -15,6 +15,12 @@ public class Sea extends Tile
       fleet = null;
       //ports = null;
    }
+   public Sea( String name )
+   {
+      super( name );
+      fleet = null;
+      //ports = null;
+   }
    public void setFleet (Fleet boat)
    {
       fleet = boat;

@@ -1,6 +1,6 @@
 import java.util.*;
 // kyle
-public abstract class Province extends Tile
+public class Province extends Tile
 {
    private City city;
    private Army unit;
@@ -47,6 +47,15 @@ public abstract class Province extends Tile
       famine = false;
       rebellion = false;
    }
+   public Province(String nomen, City c)
+   {
+      super(nomen);
+      city = c;
+      unit = null;
+      home_of = null;
+      famine = false;
+      rebellion = false;
+   }
    // end constructors
    //start famine + rebellion methods
    public void toggle_famine()
@@ -84,4 +93,8 @@ public abstract class Province extends Tile
       fleet = boat;
    }
    // end unit + fleet methods
+   public void addCity(City c)
+   {
+      city = c;
+   }
 }
