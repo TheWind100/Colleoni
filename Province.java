@@ -93,7 +93,7 @@ public class Province extends Tile
       fleet = boat;
    }
    // end unit + fleet methods
-   public void addCity(City c)
+   void addCity(City c)
    {
       city = c;
    }
