@@ -5,6 +5,7 @@ public abstract class Tile
    private String owner;
    private ArrayList<Tile> borders;
    private String name;
+   abstract void addCity(City c);
    public Tile()
    {
       owner = null;

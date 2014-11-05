@@ -15,231 +15,235 @@ public class Map
                                  "Lower Adriatic"};*/
    public Map()
    {
-      tiles = new Tile[75];
+      tiles = new Tile[70];
+      
       
       //start provinces
-      Province Avignon = new Province("Avignon", "France");
-      City avignon = new City(Avignon);
-      Avignon.addCity(avignon);
+      tiles[0] = new Province("Avignon", "France");
+      City avignon = new City(tiles[0]);
+      tiles[0].addCity(avignon);
       
-      Province Swiss = new Province("Swiss", "France");
-      City swiss = new City(Swiss);
-      Swiss.addCity(swiss);
+      tiles[1] = new Province("Swiss", "France");
+      City swiss = new City(tiles[1]);
+      tiles[1].addCity(swiss);
       
-      Province Tyrol = new Province("Tyrol", "Austria");
-      City tyrol = new City(Tyrol);
-      Tyrol.addCity(tyrol);
+      tiles[2] = new Province("Tyrol", "Austria");
+      City tyrol = new City(tiles[2]);
+      tiles[2].addCity(tyrol);
       
-      Province Austria = new Province("Austria", "Austria");
-      City austria = new City(Austria);
-      Austria.addCity(austria);
+      tiles[3] = new Province("Austria", "Austria");
+      City austria = new City(tiles[3]);
+      tiles[3].addCity(austria);
       
-      Province Hungary = new Province("Hungary", "Austria");
-      City hungary = new City(Hungary);
-      Hungary.addCity(hungary);
+      tiles[4] = new Province("Hungary", "Austria");
+      City hungary = new City(tiles[4]);
+      tiles[4].addCity(hungary);
       
-      Province Marseille = new Province("Marseille", "France");
-      City marseille = new City(Marseille);
-      Marseille.addCity(marseille);
+      tiles[5] = new Province("Marseille", "France");
+      City marseille = new City(tiles[5]);
+      tiles[5].addCity(marseille);
       
-      Province Provence = new Province("Provence","France");
+      tiles[6] = new Province("Provence","France");
       
-      Province Saluzzo = new Province("Saluzzo");
-      City saluzzo = new City(Saluzzo);
-      Saluzzo.addCity(saluzzo);
+      tiles[7] = new Province("Saluzzo");
+      City saluzzo = new City(tiles[7]);
+      tiles[7].addCity(saluzzo);
       
-      Province Turin = new Province("Turin");
-      City turin = new City(Turin);
-      Turin.addCity(turin);
+      tiles[8] = new Province("Turin");
+      City turin = new City(tiles[8]);
+      tiles[8].addCity(turin);
       
-      Province Como = new Province("Como", "Milan");
+      tiles[9] = new Province("Como", "Milan");
       
-      Province Milan = new Province("Milan", "Milan");
-      City milan = new City(Milan);
-      Milan.addCity(milan);
+      tiles[10] = new Province("Milan", "Milan");
+      City milan = new City(tiles[10]);
+      tiles[10].addCity(milan);
       
-      Province Trent = new Province("Trent");
-      City trent = new City(Trent);
-      Trent.addCity(trent);
+      tiles[11] = new Province("Trent");
+      City trent = new City(tiles[11]);
+      tiles[11].addCity(trent);
       
-      Province Carinthia = new Province("Carinthia", "France");
-      City carinthia = new City(Carinthia);
-      Carinthia.addCity(carinthia);
+      tiles[12] = new Province("Carinthia", "France");
+      City carinthia = new City(tiles[12]);
+      tiles[12].addCity(carinthia);
       
-      Province Slavonia = new Province("Slavonia");
-      City slavonia = new City(Slavonia);
-      Slavonia.addCity(slavonia);
+      tiles[13] = new Province("Slavonia");
+      City slavonia = new City(tiles[13]);
+      tiles[13].addCity(slavonia);
       
-      Province Savoy = new Province("Savoy");
-      City savoy = new City(Savoy);
-      Savoy.addCity(savoy);
+      tiles[14] = new Province("Savoy");
+      City savoy = new City(tiles[14]);
+      tiles[14].addCity(savoy);
       
-      Province Montferrat = new Province("Montferrat");
-      City montferrat = new City(Montferrat);
-      Montferrat.addCity(montferrat);
+      tiles[15] = new Province("Montferrat");
+      City montferrat = new City(tiles[15]);
+      tiles[15].addCity(montferrat);
       
-      Province Pavia = new Province("Pavia", "Milan");
-      City pavia = new City(Pavia);
-      Pavia.addCity(pavia);
+      tiles[16] = new Province("Pavia", "Milan");
+      City pavia = new City(tiles[16]);
+      tiles[16].addCity(pavia);
       
-      Province Parma = new Province("Parma", "Milan");
+      tiles[17] = new Province("Parma", "Milan");
       
-      Province Cremona = new Province("Cremona", "Milan");
-      City cremona = new City(Cremona);
-      Cremona.addCity(cremona);
+      tiles[18] = new Province("Cremona", "Milan");
+      City cremona = new City(tiles[18]);
+      tiles[18].addCity(cremona);
       
-      Province Bergamo = new Province("Bergamo", "Venice");
+      tiles[19] = new Province("Bergamo", "Venice");
       
-      Province Verona = new Province("Verona", "Venice");
+      tiles[20] = new Province("Verona", "Venice");
       
-      Province Friuli = new Province("Friuli", "Venice");
+      tiles[21] = new Province("Friuli", "Venice");
 
-      Province Carnola = new Province("Carnola");
-      City carnola = new City(Carnola);
-      Carnola.addCity(carnola);
+      tiles[22] = new Province("Carnola");
+      City carnola = new City(tiles[22]);
+      tiles[22].addCity(carnola);
       
-      Province Genoa = new Province("Genoa");
-      City genoa = new City(Genoa);
-      Genoa.addCity(genoa);
+      tiles[23] = new Province("Genoa");
+      City genoa = new City(tiles[23]);
+      tiles[23].addCity(genoa);
       
-      Province Fornovo = new Province("Fornovo", "Milan");
+      tiles[24] = new Province("Fornovo", "Milan");
       
-      Province Croatia = new Province("Croatia");
-      City croatia = new City(Croatia);
-      Croatia.addCity(croatia);
+      tiles[25] = new Province("Croatia");
+      City croatia = new City(tiles[25]);
+      tiles[25].addCity(croatia);
       
-      Province Istria = new Province("Istria", "Venice");
+      tiles[26] = new Province("Istria", "Venice");
       
-      Province Dalmatia = new Province("Dalmatia", "Venice");
-      City dalmatia = new City(Dalmatia);
-      Dalmatia.addCity(dalmatia);
+      tiles[27] = new Province("Dalmatia", "Venice");
+      City dalmatia = new City(tiles[27]);
+      tiles[27].addCity(dalmatia);
       
-      Province Bosnia = new Province("Bosnia", "Turks");
+      tiles[28] = new Province("Bosnia", "Turks");
       
-      Province Herzegovina = new Province("Herzegovina", "Turks");
+      tiles[29] = new Province("Herzegovina", "Turks");
       
-      Province Ragusa = new Province("Ragusa");
-      City ragusa = new City(Ragusa);
-      Ragusa.addCity(ragusa);
+      tiles[30] = new Province("Ragusa");
+      City ragusa = new City(tiles[30]);
+      tiles[30].addCity(ragusa);
       
-      Province Albania = new Province("Albania", "Turks");
-      City albania = new City(Albania);
-      Albania.addCity(albania);
+      tiles[31] = new Province("Albania", "Turks");
+      City albania = new City(tiles[31]);
+      tiles[31].addCity(albania);
       
-      Province Durazzo = new Province("Durazzo", "Turks");
-      City durazzo = new City(Durazzo);
-      Durazzo.addCity(durazzo);
+      tiles[32] = new Province("Durazzo", "Turks");
+      City durazzo = new City(tiles[32]);
+      tiles[32].addCity(durazzo);
       
-      Province Tunis = new Province("Tunis", "Turks");
-      City tunis = new City(Tunis);
-      Tunis.addCity(tunis);
+      tiles[33] = new Province("Tunis", "Turks");
+      City tunis = new City(tiles[33]);
+      tiles[33].addCity(tunis);
       
-      Province Sardinia = new Province("Sardinia");
-      City sardinia = new City(Sardinia);
-      Sardinia.addCity(sardinia);
+      tiles[34] = new Province("Sardinia");
+      City sardinia = new City(tiles[34]);
+      tiles[34].addCity(sardinia);
       
-      Province Corsica = new Province("Corsica");
-      City corsica = new City(Corsica);
-      Corsica.addCity(corsica);
+      tiles[35] = new Province("Corsica");
+      City corsica = new City(tiles[35]);
+      tiles[35].addCity(corsica);
       
-      Province Modena = new Province("Modena");
-      City modena = new City(Modena);
-      Modena.addCity(modena);
+      tiles[36] = new Province("Modena");
+      City modena = new City(tiles[36]);
+      tiles[36].addCity(modena);
       
-      Province Mantua = new Province("Mantua");
-      City mantua = new City(Mantua);
-      Mantua.addCity(mantua);
+      tiles[37] = new Province("Mantua");
+      City mantua = new City(tiles[37]);
+      tiles[37].addCity(mantua);
       
-      Province Ferrara = new Province("Ferrara");
-      City ferrara = new City(Ferrara);
-      Ferrara.addCity(ferrara);
+      tiles[38] = new Province("Ferrara");
+      City ferrara = new City(tiles[38]);
+      tiles[38].addCity(ferrara);
       
-      Province Padua = new Province("Padua", "Venice");
-      City padua = new City(Padua);
-      Padua.addCity(padua);
+      tiles[39] = new Province("Padua", "Venice");
+      City padua = new City(tiles[39]);
+      tiles[39].addCity(padua);
       
-      Province Lucca = new Province("Lucca");
-      City lucca = new City(Lucca);
-      Lucca.addCity(lucca);
+      tiles[40] = new Province("Lucca");
+      City lucca = new City(tiles[40]);
+      tiles[40].addCity(lucca);
       
-      Province Bologna = new Province("Bologna", "Papacy");
-      City bologna = new City(Bologna);
-      Bologna.addCity(bologna);
+      tiles[41] = new Province("Bologna", "Papacy");
+      City bologna = new City(tiles[41]);
+      tiles[41].addCity(bologna);
       
-      Province Pisa = new Province("Pisa", "Florence");
-      City pisa = new City(Pisa);
-      Pisa.addCity(pisa);
+      tiles[42] = new Province("Pisa", "Florence");
+      City pisa = new City(tiles[42]);
+      tiles[42].addCity(pisa);
       
-      Province Pistoia = new Province("Pistoia", "Florence");
-      City pistoia = new City(Pistoia);
-      Pistoia.addCity(pistoia);
+      tiles[43] = new Province("Pistoia", "Florence");
+      City pistoia = new City(tiles[43]);
+      tiles[43].addCity(pistoia);
       
-      Province Florence = new Province("Florence", "Florence");
-      City florence = new City(Florence);
-      Florence.addCity(florence);
+      tiles[44] = new Province("Florence", "Florence");
+      City florence = new City(tiles[44]);
+      tiles[44].addCity(florence);
       
-      Province Urbino = new Province("Urbino", "Papacy");
-      City urbino = new City(Urbino);
-      Urbino.addCity(urbino);
+      tiles[45] = new Province("Urbino", "Papacy");
+      City urbino = new City(tiles[45]);
+      tiles[45].addCity(urbino);
       
-      Province Piombino = new Province("Piombino");
-      City piombino = new City(Piombino);
-      Piombino.addCity(piombino);
+      tiles[46] = new Province("Piombino");
+      City piombino = new City(tiles[46]);
+      tiles[46].addCity(piombino);
       
-      Province Sienna = new Province("Sienna");
-      City sienna = new City(Sienna);
-      Sienna.addCity(sienna);
+      tiles[47] = new Province("Sienna");
+      City sienna = new City(tiles[47]);
+      tiles[47].addCity(sienna);
       
-      Province Arezzo = new Province("Arezzo");
-      City arezzo = new City(Arezzo);
-      Arezzo.addCity(arezzo);
+      tiles[48] = new Province("Arezzo");
+      City arezzo = new City(tiles[48]);
+      tiles[48].addCity(arezzo);
       
-      Province Patrimony = new Province("Patrimony");
+      tiles[47] = new Province("Patrimony");
       
-      Province Perugia = new Province("Perugia");
+      tiles[50] = new Province("Perugia");
       
-      Province Spoleto = new Province("Spoleto");
+      tiles[51] = new Province("Spoleto");
       
-      Province Ancona = new Province("Ancona");
+      tiles[52] = new Province("Ancona");
       
-      Province Rome = new Province("Rome");
-      City rome = new City(Rome);
-      Rome.addCity(rome);
+      tiles[53] = new Province("Rome");
+      City rome = new City(tiles[53]);
+      tiles[53].addCity(rome);
       
-      Province Capua = new Province("Capua");
+      tiles[54] = new Province("Capua");
       
-      Province Aquila = new Province("Aquila");
+      tiles[55] = new Province("Aquila");
       
-      Province Naples = new Province("Naples");
-      City naples = new City(Naples);
-      Naples.addCity(naples);
+      tiles[56] = new Province("Naples");
+      City naples = new City(tiles[56]);
+      tiles[56].addCity(naples);
       
-      Province Salerno = new Province("Salerno");
+      tiles[57] = new Province("Salerno");
       
-      Province Bari = new Province("Bari");
-      City bari = new City(Bari);
-      Bari.addCity(bari);
+      tiles[58] = new Province("Bari");
+      City bari = new City(tiles[58]);
+      tiles[58].addCity(bari);
       
-      Province Otranio = new Province("Otranio");
+      tiles[59] = new Province("Otranio");
       
-      Province Messina = new Province("Messina");
-      City messina = new City(Messina);
-      Messina.addCity(messina);
+      tiles[60] = new Province("Messina");
+      City messina = new City(tiles[60]);
+      tiles[60].addCity(messina);
       
-      Province Palermo = new Province("Palermo");
-      City palermo = new City(Palermo);
-      Palermo.addCity(palermo);
+      tiles[61] = new Province("Palermo");
+      City palermo = new City(tiles[61]);
+      tiles[61].addCity(palermo);
       //end provinces
       
+      //¡¡¡Alter fleet movement with regards to Venice!!!
+      
       //start seas
-      Sea Gulf_of_Lions = new Sea("Gulf of Lions");
-      Sea Ligurian_Sea = new Sea("Ligurian Sea");
-      Sea Tyrrhenian_Sea = new Sea("Tyrrhenian Sea");
-      Sea Western_Mediterranean = new Sea("Western Mediterranean");
-      Sea Centeral_Mediterranean = new Sea("Central Mediterranean");
-      Sea Ionian_Sea = new Sea("Ionian Sea");
-      Sea Upper_Adriatic = new Sea("Upper Adriatic");
-      Sea Lower_Adriatic = new Sea("Lower Adriatic");
+      tiles[62] = new Sea("Gulf of Lions");
+      tiles[63] = new Sea("Ligurian Sea");
+      tiles[64] = new Sea("Tyrrhenian Sea");
+      tiles[65] = new Sea("Western Mediterranean");
+      tiles[66] = new Sea("Central Mediterranean");
+      tiles[67] = new Sea("Ionian Sea");
+      tiles[68] = new Sea("Upper Adriatic");
+      tiles[69] = new Sea("Lower Adriatic");
+      //end seas
    }
    public void addTile(Tile tile, int k)
    {

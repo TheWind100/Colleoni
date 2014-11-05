@@ -3,7 +3,7 @@ import java.util.*;
 public class Sea extends Tile
 {
    private Fleet fleet;
-   //private ArrayList<Province> ports;
+   private ArrayList<City> ports;
    public Sea()
    {
       fleet = null;
@@ -29,8 +29,8 @@ public class Sea extends Tile
    {
       return fleet;
    }
-   /*public void addPort(Province port)
+   void addCity(City c)
    {
-      ports.add(port);
-   }*/
+      ports.add(c);
+   }
 }

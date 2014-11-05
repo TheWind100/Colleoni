@@ -4,7 +4,7 @@ public class City
    private Garrison unit;
    private boolean rebellion;
    private boolean famine;
-   private Province province;
+   private Tile province;
    private String owner;
    private Sea port;
    //start constructors
@@ -16,7 +16,7 @@ public class City
       rebellion = false;
       port = null;
    }
-   public City(Province p)
+   public City(Tile p)
    {
       province = p;
       unit = null;
