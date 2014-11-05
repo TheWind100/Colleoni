@@ -195,7 +195,7 @@ public class Map
       City arezzo = new City(tiles[48]);
       tiles[48].addCity(arezzo);
       
-      tiles[47] = new Province("Patrimony");
+      tiles[49] = new Province("Patrimony");
       
       tiles[50] = new Province("Perugia");
       
@@ -249,6 +249,9 @@ public class Map
       tiles[69] = new Sea("Lower Adriatic");
       //end seas
       
+      //start borders
+      
+      //end borders
    }
    public void addTile(Tile tile, int k)
    {
