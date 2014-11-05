@@ -234,6 +234,10 @@ public class Map
       
       //¡¡¡Alter fleet movement with regards to Venice!!!
       
+      tiles[70] = new Sea("Venice");
+      City venice = new City(tiles[70]);
+      tiles[70].addCity(venice);
+            
       //start seas
       tiles[62] = new Sea("Gulf of Lions");
       tiles[63] = new Sea("Ligurian Sea");
