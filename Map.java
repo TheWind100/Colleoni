@@ -15,7 +15,7 @@ public class Map
                                  "Lower Adriatic"};*/
    public Map()
    {
-      tiles = new Tile[70];
+      tiles = new Tile[72];
       
       
       //start provinces
@@ -63,7 +63,7 @@ public class Map
       City trent = new City(tiles[11]);
       tiles[11].addCity(trent);
       
-      tiles[12] = new Province("Carinthia", "France");
+      tiles[12] = new Province("Carinthia", "Austria");
       City carinthia = new City(tiles[12]);
       tiles[12].addCity(carinthia);
       
@@ -230,13 +230,17 @@ public class Map
       tiles[61] = new Province("Palermo");
       City palermo = new City(tiles[61]);
       tiles[61].addCity(palermo);
+      
+      tiles[71] = new Province("Treviso", "Venice");
+      City treviso = new City(tiles[71]);
+      tiles[71].addCity(treviso);
       //end provinces
       
-      //¡¡¡Alter fleet movement with regards to Venice!!!
-      
+      //start Venice
       tiles[70] = new Sea("Venice");
       City venice = new City(tiles[70]);
       tiles[70].addCity(venice);
+      //end Venice
             
       //start seas
       tiles[62] = new Sea("Gulf of Lions");
@@ -250,6 +254,241 @@ public class Map
       //end seas
       
       //start borders
+      
+      //tiles[].addBorder(tile[]);
+      
+      tiles[0].addBorder(tile[1]);
+      tiles[0].addBorder(tile[8]);
+      tiles[0].addBorder(tile[6]);
+      tiles[0].addBorder(tile[5]);
+      
+      tiles[1].addBorder(tile[0]);
+      tiles[1].addBorder(tile[2]);
+      tiles[1].addBorder(tile[8]);
+      
+      tiles[2].addBorder(tile[1]);
+      tiles[2].addBorder(tile[8]);
+      tiles[2].addBorder(tile[9]);
+      tiles[2].addBorder(tile[10]);
+      tiles[2].addBorder(tile[12]);
+      tiles[2].addBorder(tile[3]);
+      
+      tiles[3].addBorder(tile[2]);
+      tiles[3].addBorder(tile[12]);
+      tiles[3].addBorder(tile[13]);
+      tiles[3].addBorder(tile[4]);
+      
+      tiles[4].addBorder(tile[3]);
+      tiles[4].addBorder(tile[13]);
+      
+      tiles[5].addBorder(tile[0]);
+      tiles[5].addBorder(tile[6]);
+      tiles[5].addBorder(tile[62]);
+      
+      tiles[6].addBorder(tile[0]);
+      tiles[6].addBorder(tile[5]);
+      tiles[6].addBorder(tile[8]);
+      tiles[6].addBorder(tile[7]);
+      tiles[6].addBorder(tile[14]);
+      tiles[6].addBorder(tile[62]);
+      tiles[6].addBorder(tile[63]);
+      
+      tiles[7].addBorder(tile[6]);
+      tiles[7].addBorder(tile[14]);
+      tiles[7].addBorder(tile[8]);
+      
+      tiles[8].addBorder(tile[0]);
+      tiles[8].addBorder(tile[1]);
+      tiles[8].addBorder(tile[2]);
+      tiles[8].addBorder(tile[9]);
+      tiles[8].addBorder(tile[16]);
+      tiles[8].addBorder(tile[15]);
+      tiles[8].addBorder(tile[14]);
+      tiles[8].addBorder(tile[7]);
+      tiles[8].addBorder(tile[6]);
+      
+      tiles[9].addBorder(tile[8]);
+      tiles[9].addBorder(tile[16]);
+      tiles[9].addBorder(tile[10]);
+      tiles[9].addBorder(tile[2]);
+      
+      tiles[10].addBorder(tile[9]);
+      tiles[10].addBorder(tile[16]);
+      tiles[10].addBorder(tile[17]);
+      tiles[10].addBorder(tile[18]);
+      tiles[10].addBorder(tile[19]);
+      tiles[10].addBorder(tile[11]);
+      tiles[10].addBorder(tile[12]);
+      tiles[10].addBorder(tile[2]);
+      
+      tiles[11].addBorder(tile[10]);
+      tiles[11].addBorder(tile[19]);
+      tiles[11].addBorder(tile[20]);
+      tiles[11].addBorder(tile[12]);
+      
+      tiles[12].addBorder(tile[11]);
+      tiles[12].addBorder(tile[20]);
+      tiles[12].addBorder(tile[21]);
+      tiles[12].addBorder(tile[22]);
+      tiles[12].addBorder(tile[13]);
+      tiles[12].addBorder(tile[3]);
+      tiles[12].addBorder(tile[2]);
+      tiles[12].addBorder(tile[10]);
+      
+      tiles[13].addBorder(tile[4]);
+      tiles[13].addBorder(tile[3]);
+      tiles[13].addBorder(tile[12]);
+      tiles[13].addBorder(tile[22]);
+      tiles[13].addBorder(tile[25]);
+      
+      tiles[14].addBorder(tile[6]);
+      tiles[14].addBorder(tile[7]);
+      tiles[14].addBorder(tile[8]);
+      tiles[14].addBorder(tile[15]);
+      tiles[14].addBorder(tile[23]);
+      tiles[14].addBorder(tile[63]);
+      
+      tiles[15].addBorder(tile[14]);
+      tiles[15].addBorder(tile[8]);
+      tiles[15].addBorder(tile[17]);
+      tiles[15].addBorder(tile[24]);
+      tiles[15].addBorder(tile[23]);
+      
+      tiles[16].addBorder(tile[8]);
+      tiles[16].addBorder(tile[15]);
+      tiles[16].addBorder(tile[24]);
+      tiles[16].addBorder(tile[17]);
+      tiles[16].addBorder(tile[10]);
+      tiles[16].addBorder(tile[9]);
+      
+      tiles[17].addBorder(tile[16]);
+      tiles[17].addBorder(tile[24]);
+      tiles[17].addBorder(tile[36]);
+      tiles[17].addBorder(tile[37]);
+      tiles[17].addBorder(tile[18]);
+      tiles[17].addBorder(tile[10]);
+      
+      tiles[18].addBorder(tile[10]);
+      tiles[18].addBorder(tile[17]);
+      tiles[18].addBorder(tile[37]);
+      tiles[18].addBorder(tile[19]);
+      
+      tiles[19].addBorder(tile[10]);
+      tiles[19].addBorder(tile[18]);
+      tiles[19].addBorder(tile[37]);
+      tiles[19].addBorder(tile[20]);
+      tiles[19].addBorder(tile[11]);
+      
+      tiles[20].addBorder(tile[11]);
+      tiles[20].addBorder(tile[19]);
+      tiles[20].addBorder(tile[37]);
+      tiles[20].addBorder(tile[38]);
+      tiles[20].addBorder(tile[39]);
+      tiles[20].addBorder(tile[71]);
+      tiles[20].addBorder(tile[21]);
+      tiles[20].addBorder(tile[12]);
+      
+      tiles[21].addBorder(tile[]);
+      
+      tiles[22].addBorder(tile[]);
+      
+      tiles[23].addBorder(tile[]);
+      
+      tiles[24].addBorder(tile[]);
+      
+      tiles[25].addBorder(tile[]);
+      
+      tiles[26].addBorder(tile[]);
+      
+      tiles[27].addBorder(tile[]);
+      
+      tiles[28].addBorder(tile[]);
+      
+      tiles[29].addBorder(tile[]);
+      
+      tiles[30].addBorder(tile[]);
+      
+      tiles[31].addBorder(tile[]);
+      
+      tiles[32].addBorder(tile[]);
+      
+      tiles[33].addBorder(tile[]);
+      
+      tiles[34].addBorder(tile[]);
+      
+      tiles[35].addBorder(tile[]);
+      
+      tiles[36].addBorder(tile[]);
+      
+      tiles[37].addBorder(tile[]);
+      
+      tiles[38].addBorder(tile[]);
+      
+      tiles[39].addBorder(tile[]);
+      
+      tiles[40].addBorder(tile[]);
+      
+      tiles[41].addBorder(tile[]);
+      
+      tiles[42].addBorder(tile[]);
+      
+      tiles[43].addBorder(tile[]);
+      
+      tiles[44].addBorder(tile[]);
+      
+      tiles[45].addBorder(tile[]);
+      
+      tiles[46].addBorder(tile[]);
+      
+      tiles[47].addBorder(tile[]);
+      
+      tiles[48].addBorder(tile[]);
+      
+      tiles[49].addBorder(tile[]);
+      
+      tiles[50].addBorder(tile[]);
+      
+      tiles[51].addBorder(tile[]);
+      
+      tiles[52].addBorder(tile[]);
+      
+      tiles[53].addBorder(tile[]);
+      
+      tiles[54].addBorder(tile[]);
+      
+      tiles[55].addBorder(tile[]);
+      
+      tiles[56].addBorder(tile[]);
+      
+      tiles[57].addBorder(tile[]);
+      
+      tiles[58].addBorder(tile[]);
+      
+      tiles[59].addBorder(tile[]);
+      
+      tiles[60].addBorder(tile[]);
+      
+      tiles[61].addBorder(tile[]);
+      
+      tiles[62].addBorder(tile[]);
+      
+      tiles[63].addBorder(tile[]);
+      
+      tiles[64].addBorder(tile[]);
+      
+      tiles[65].addBorder(tile[]);
+      
+      tiles[66].addBorder(tile[]);
+      
+      tiles[67].addBorder(tile[]);
+      
+      tiles[68].addBorder(tile[]);
+      
+      tiles[69].addBorder(tile[]);
+      
+      tiles[70].addBorder(tile[]);
+      
+      tiles[71].addBorder(tile[]);
       
       //end borders
    }
