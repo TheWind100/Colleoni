@@ -17,7 +17,7 @@ public class Map
                                  "Lower Adriatic"};*/
    public Map()
    {
-      tiles = new Tile[72];
+      tiles = new Tile[73];
       
       
       //start provinces
@@ -253,6 +253,7 @@ public class Map
       tiles[67] = new Sea("Ionian Sea");
       tiles[68] = new Sea("Upper Adriatic");
       tiles[69] = new Sea("Lower Adriatic");
+      tiles[72] = new Sea("Gulf of Naples");
       //end seas
       
       //start borders
@@ -485,67 +486,227 @@ public class Map
       tiles[37].addBorder(tile[38]);
       tiles[37].addBorder(tile[41]);
       
-      tiles[38].addBorder(tile[]);
+      tiles[38].addBorder(tile[41]);
+      tiles[38].addBorder(tile[37]);
+      tiles[38].addBorder(tile[20]);
+      tiles[38].addBorder(tile[39]);
+      tiles[38].addBorder(tile[68]);
       
-      tiles[39].addBorder(tile[]);
+      tiles[39].addBorder(tile[38]);
+      tiles[39].addBorder(tile[20]);
+      tiles[39].addBorder(tile[71]);
+      tiles[39].addBorder(tile[70]);
+      tiles[39].addBorder(tile[68]);
       
-      tiles[40].addBorder(tile[]);
+      tiles[40].addBorder(tile[63]);
+      tiles[40].addBorder(tile[36]);
+      tiles[40].addBorder(tile[41]);
+      tiles[40].addBorder(tile[42]);
+      tiles[40].addBorder(tile[43]);
       
-      tiles[41].addBorder(tile[]);
+      tiles[41].addBorder(tile[40]);
+      tiles[41].addBorder(tile[36]);
+      tiles[41].addBorder(tile[37]);
+      tiles[41].addBorder(tile[38]);
+      tiles[41].addBorder(tile[68]);
+      tiles[41].addBorder(tile[45]);
+      tiles[41].addBorder(tile[44]);
+      tiles[41].addBorder(tile[43]);
       
-      tiles[42].addBorder(tile[]);
+      tiles[42].addBorder(tile[40]);
+      tiles[42].addBorder(tile[43]);
+      tiles[42].addBorder(tile[44]);
+      tiles[42].addBorder(tile[47]);
+      tiles[42].addBorder(tile[46]);
+      tiles[42].addBorder(tile[63]);
       
-      tiles[43].addBorder(tile[]);
+      tiles[43].addBorder(tile[40]);
+      tiles[43].addBorder(tile[41]);
+      tiles[43].addBorder(tile[44]);
+      tiles[43].addBorder(tile[42]);
       
-      tiles[44].addBorder(tile[]);
+      tiles[44].addBorder(tile[43]);
+      tiles[44].addBorder(tile[41]);
+      tiles[44].addBorder(tile[45]);
+      tiles[44].addBorder(tile[48]);
+      tiles[44].addBorder(tile[47]);
+      tiles[44].addBorder(tile[42]);
       
-      tiles[45].addBorder(tile[]);
+      tiles[45].addBorder(tile[41]);
+      tiles[45].addBorder(tile[44]);
+      tiles[45].addBorder(tile[48]);
+      tiles[45].addBorder(tile[50]);
+      tiles[45].addBorder(tile[51]);
+      tiles[45].addBorder(tile[52]);
+      tiles[45].addBorder(tile[68]);
       
-      tiles[46].addBorder(tile[]);
+      tiles[46].addBorder(tile[42]);
+      tiles[46].addBorder(tile[47]);
+      tiles[46].addBorder(tile[63]);
+      tiles[46].addBorder(tile[64]);
       
-      tiles[47].addBorder(tile[]);
+      tiles[47].addBorder(tile[43]);
+      tiles[47].addBorder(tile[42]);
+      tiles[47].addBorder(tile[44]);
+      tiles[47].addBorder(tile[48]);
+      tiles[47].addBorder(tile[50]);
+      tiles[47].addBorder(tile[49]);
+      tiles[47].addBorder(tile[64]);
       
-      tiles[48].addBorder(tile[]);
+      tiles[48].addBorder(tile[44]);
+      tiles[48].addBorder(tile[45]);
+      tiles[48].addBorder(tile[47]);
+      tiles[48].addBorder(tile[50]);
       
-      tiles[49].addBorder(tile[]);
+      tiles[49].addBorder(tile[47]);
+      tiles[49].addBorder(tile[50]);
+      tiles[49].addBorder(tile[53]);
+      tiles[49].addBorder(tile[64]);
       
-      tiles[50].addBorder(tile[]);
+      tiles[50].addBorder(tile[47]);
+      tiles[50].addBorder(tile[48]);
+      tiles[50].addBorder(tile[45]);
+      tiles[50].addBorder(tile[49]);
+      tiles[50].addBorder(tile[53]);
+      tiles[50].addBorder(tile[51]);
       
-      tiles[51].addBorder(tile[]);
+      tiles[51].addBorder(tile[50]);
+      tiles[51].addBorder(tile[45]);
+      tiles[51].addBorder(tile[52]);
+      tiles[51].addBorder(tile[55]);
+      tiles[51].addBorder(tile[54]);
+      tiles[51].addBorder(tile[53]);
       
-      tiles[52].addBorder(tile[]);
+      tiles[52].addBorder(tile[45]);
+      tiles[52].addBorder(tile[51]);
+      tiles[52].addBorder(tile[55]);
+      tiles[52].addBorder(tile[68]);
+      tiles[52].addBorder(tile[69]);
       
-      tiles[53].addBorder(tile[]);
+      tiles[53].addBorder(tile[49]);
+      tiles[53].addBorder(tile[50]);
+      tiles[53].addBorder(tile[51]);
+      tiles[53].addBorder(tile[54]);
+      tiles[53].addBorder(tile[53]);
       
-      tiles[54].addBorder(tile[]);
+      tiles[54].addBorder(tile[53]);
+      tiles[54].addBorder(tile[55]);
+      tiles[54].addBorder(tile[51]);
+      tiles[54].addBorder(tile[56]);
+      tiles[54].addBorder(tile[64]);
       
-      tiles[55].addBorder(tile[]);
+      tiles[55].addBorder(tile[52]);
+      tiles[55].addBorder(tile[51]);
+      tiles[55].addBorder(tile[54]);
+      tiles[55].addBorder(tile[56]);
+      tiles[55].addBorder(tile[57]);
+      tiles[55].addBorder(tile[58]);
+      tiles[55].addBorder(tile[68]);
       
-      tiles[56].addBorder(tile[]);
+      tiles[56].addBorder(tile[54]);
+      tiles[56].addBorder(tile[55]);
+      tiles[56].addBorder(tile[57]);
+      tiles[56].addBorder(tile[72]);
+      tiles[56].addBorder(tile[64]);
       
-      tiles[57].addBorder(tile[]);
+      tiles[57].addBorder(tile[56]);
+      tiles[57].addBorder(tile[55]);
+      tiles[57].addBorder(tile[58]);
+      tiles[57].addBorder(tile[59]);
+      tiles[57].addBorder(tile[72]);
       
-      tiles[58].addBorder(tile[]);
+      tiles[58].addBorder(tile[55]);
+      tiles[58].addBorder(tile[57]);
+      tiles[58].addBorder(tile[59]);
+      tiles[58].addBorder(tile[69]);
       
-      tiles[59].addBorder(tile[]);
+      tiles[59].addBorder(tile[57]);
+      tiles[59].addBorder(tile[58]);
+      tiles[59].addBorder(tile[69]);
+      tiles[59].addBorder(tile[67]);
+      tiles[59].addBorder(tile[72]);
+      tiles[59].addBorder(tile[60]);
       
-      tiles[60].addBorder(tile[]);
+      tiles[60].addBorder(tile[59]);
+      tiles[60].addBorder(tile[72]);
+      tiles[60].addBorder(tile[67]);
+      tiles[60].addBorder(tile[61]);
       
-      tiles[61].addBorder(tile[]);
+      tiles[61].addBorder(tile[60]);
+      tiles[61].addBorder(tile[66]);
+      tiles[61].addBorder(tile[64]);
+      tiles[61].addBorder(tile[72]);
       
-      tiles[62].addBorder(tile[]);
+      //seas
       
-      tiles[63].addBorder(tile[]);
+      tiles[62].addBorder(tile[0]);
+      tiles[62].addBorder(tile[5]);
+      tiles[62].addBorder(tile[6]);
+      tiles[62].addBorder(tile[63]);
+      tiles[62].addBorder(tile[64]);
+      tiles[62].addBorder(tile[65]);
+      tiles[62].addBorder(tile[34]);
+      tiles[62].addBorder(tile[35]);
       
-      tiles[64].addBorder(tile[]);
+      tiles[63].addBorder(tile[6]);
+      tiles[63].addBorder(tile[14]);
+      tiles[63].addBorder(tile[23]);
+      tiles[63].addBorder(tile[36]);
+      tiles[63].addBorder(tile[40]);
+      tiles[63].addBorder(tile[42]);
+      tiles[63].addBorder(tile[46]);
+      tiles[63].addBorder(tile[64]);
+      tiles[63].addBorder(tile[35]);
+      tiles[63].addBorder(tile[62]);
       
-      tiles[65].addBorder(tile[]);
+      tiles[64].addBorder(tile[72]);
+      tiles[64].addBorder(tile[66]);
+      tiles[64].addBorder(tile[65]);
+      tiles[64].addBorder(tile[62]);
+      tiles[64].addBorder(tile[63]);
+      tiles[64].addBorder(tile[61]);
+      tiles[64].addBorder(tile[34]);
+      tiles[64].addBorder(tile[35]);
+      tiles[64].addBorder(tile[46]);
+      tiles[64].addBorder(tile[47]);
+      tiles[64].addBorder(tile[49]);
+      tiles[64].addBorder(tile[53]);
+      tiles[64].addBorder(tile[54]);
+      tiles[64].addBorder(tile[56]);
       
-      tiles[66].addBorder(tile[]);
+      tiles[65].addBorder(tile[34]);
+      tiles[65].addBorder(tile[33]);
+      tiles[65].addBorder(tile[66]);
+      tiles[65].addBorder(tile[64]);
+      tiles[65].addBorder(tile[62]);
       
-      tiles[67].addBorder(tile[]);
+      tiles[66].addBorder(tile[64]);
+      tiles[66].addBorder(tile[65]);
+      tiles[66].addBorder(tile[67]);
+      tiles[66].addBorder(tile[33]);
+      tiles[66].addBorder(tile[61]);
       
-      tiles[68].addBorder(tile[]);
+      tiles[67].addBorder(tile[59]);
+      tiles[67].addBorder(tile[60]);
+      tiles[67].addBorder(tile[61]);
+      tiles[67].addBorder(tile[32]);
+      tiles[67].addBorder(tile[66]);
+      tiles[67].addBorder(tile[72]);
+      tiles[67].addBorder(tile[69]);
+      
+      tiles[68].addBorder(tile[70]);
+      tiles[68].addBorder(tile[69]);
+      tiles[68].addBorder(tile[52]);
+      tiles[68].addBorder(tile[45]);
+      tiles[68].addBorder(tile[41]);
+      tiles[68].addBorder(tile[38]);
+      tiles[68].addBorder(tile[39]);
+      tiles[68].addBorder(tile[71]);
+      tiles[68].addBorder(tile[21]);
+      tiles[68].addBorder(tile[22]);
+      tiles[68].addBorder(tile[25]);
+      tiles[68].addBorder(tile[26]);
+      tiles[68].addBorder(tile[27]);
       
       tiles[69].addBorder(tile[]);
       
