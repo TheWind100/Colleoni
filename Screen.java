@@ -6,12 +6,12 @@ import javax.swing.*;
 // Screen before Game Menu. Settings page.
 // About page. Play Button. 
 
-public class View extends JPanel
+public class Screen extends JPanel
 {
    protected static boolean titleScreen;
    protected static boolean menu;
 
-   public View()
+   public Screen()
    {
       titleScreen = true;
       menu = false;

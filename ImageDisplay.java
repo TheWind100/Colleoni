@@ -1,15 +1,13 @@
 import java.awt.*;
 import javax.swing.*;
 
-public class ImageDisplay extends View
+public class ImageDisplay extends Screen
 {
    private static ImageIcon title;
 
    public static void loadImages()
    {
-      
-      
-      title = new ImageIcon("Images/TitleScreen/title0.jpg");
+      title = new ImageIcon("CCursor.png");
    }
    
    public static void drawMainScreen(Graphics g)
