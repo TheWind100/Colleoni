@@ -1,36 +1,26 @@
 //kyle
-public class City
+public class City extends Tile
 {
    private Garrison unit;
    private boolean rebellion;
    private boolean famine;
-   private Tile province;
-   private String owner;
-   private Sea port;
    //start constructors
    public City()
    {
-      province = null;
+      super();
       unit = null;
       famine = false;
       rebellion = false;
-      port = null;
    }
    public City(Tile p)
    {
-      province = p;
+      super(p.getName());
       unit = null;
       famine = false;
       rebellion = false;
-      port = null;
+      this.addBorder(p);
    }
    //end constructors
-   public String setOwner(String new_owner)
-   {
-      String temp = owner;
-      owner = new_owner;
-      return temp;
-   }
    //start famine + rebellion methods
    public void toggle_famine()
    {
@@ -57,8 +47,8 @@ public class City
    {
       unit = garrison;
    }
-   public void addPort(Sea p)
+   public void addCity(City c)
    {
-      port = p;
+      System.out.println("You can't put a city in a city\n\n\n"+"ya dingus");
    }
 }

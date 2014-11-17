@@ -17,13 +17,13 @@ public class Army extends Unit
       super(own);
       province = prov;
    }
-   public String setProvince(Province prov) // Jimsteroni
+   public String setProvince(Province prov)
    {
       String temp = province.getName();
       province = prov;
       return temp;
    }
-   public Province getProvince()
+   public Province getTile()
    {
       return province;
    }

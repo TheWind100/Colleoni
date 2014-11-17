@@ -12,4 +12,8 @@ public class Garrison extends Unit
       super(own);
       city = null;
    }
+   public Tile getTile()
+   {
+      return city;
+   }
 }

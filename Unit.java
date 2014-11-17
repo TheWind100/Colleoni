@@ -16,8 +16,9 @@ public abstract class Unit
       owner = own;
       return temp;
    }
-   public String getOwner() // Jimsteroni
+   public String getOwner() 
    {
       return owner;
    }
+   abstract Tile getTile();
 }
