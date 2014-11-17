@@ -732,6 +732,14 @@ public class Map
       tiles[71].addBorder(tiles[21]);
       tiles[71].addBorder(tiles[70]);
       
+      tiles[72].addBorder(tiles[64]);
+      tiles[72].addBorder(tiles[67]);
+      tiles[72].addBorder(tiles[56]);
+      tiles[72].addBorder(tiles[57]);
+      tiles[72].addBorder(tiles[59]);
+      tiles[72].addBorder(tiles[60]);
+      tiles[72].addBorder(tiles[61]);
+      
       //end borders
    }
 }
