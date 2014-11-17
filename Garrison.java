@@ -16,4 +16,10 @@ public class Garrison extends Unit
    {
       return city;
    }
+   public City setTile(City c)
+   {
+      City temp = city;
+      city = c;
+      return temp;
+   }
 }

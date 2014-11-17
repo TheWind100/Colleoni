@@ -5,6 +5,7 @@ public abstract class Tile
    private String owner;
    private ArrayList<Tile> borders;
    private String name;
+   
    public Tile()
    {
       owner = null;
@@ -23,6 +24,7 @@ public abstract class Tile
       borders = new ArrayList();
       name = n;
    }
+   
    public void addBorder(Tile border)
    {
       borders.add(border);

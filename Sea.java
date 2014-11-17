@@ -4,6 +4,7 @@ public class Sea extends Tile
 {
    private Fleet fleet;
    private ArrayList<City> ports;
+   //start constructors
    public Sea()
    {
       fleet = null;
@@ -21,6 +22,7 @@ public class Sea extends Tile
       fleet = null;
       ports = new ArrayList<City>();
    }
+   //end constructors
    public void setFleet (Fleet boat)
    {
       fleet = boat;

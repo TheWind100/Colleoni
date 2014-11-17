@@ -17,9 +17,9 @@ public class Army extends Unit
       super(own);
       province = prov;
    }
-   public String setProvince(Province prov)
+   public Province setTile(Province prov)
    {
-      String temp = province.getName();
+      Province temp = province;
       province = prov;
       return temp;
    }
