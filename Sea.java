@@ -7,19 +7,19 @@ public class Sea extends Tile
    public Sea()
    {
       fleet = null;
-      //ports = null;
+      ports = new ArrayList<City>();
    }
    public Sea( String name, String owner )
    {
       super( name, owner );
       fleet = null;
-      //ports = null;
+      ports = new ArrayList<City>();
    }
    public Sea( String name )
    {
       super( name );
       fleet = null;
-      //ports = null;
+      ports = new ArrayList<City>();
    }
    public void setFleet (Fleet boat)
    {
@@ -29,7 +29,7 @@ public class Sea extends Tile
    {
       return fleet;
    }
-   void addCity(City c)
+   public void addCity(City c)
    {
       ports.add(c);
    }

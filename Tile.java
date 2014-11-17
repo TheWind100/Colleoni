@@ -9,19 +9,19 @@ public abstract class Tile
    public Tile()
    {
       owner = null;
-      borders = null;
+      borders = new ArrayList();
       name = null;
    }
    public Tile(String n)
    {
       owner = null;
-      borders = null;
+      borders = new ArrayList();
       name = n;
    }
    public Tile(String n, String o)
    {
       owner = o;
-      borders = null;
+      borders = new ArrayList();
       name = n;
    }
    public void addBorder(Tile border)
