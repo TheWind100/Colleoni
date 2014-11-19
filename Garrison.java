@@ -16,10 +16,18 @@ public class Garrison extends Unit
    {
       return city;
    }
-   public City setTile(City c)
+   public Tile setTile(Tile t)
    {
-      City temp = city;
-      city = c;
-      return temp;
+      if(t instanceof City)
+      {
+         City temp = city;
+         city = (City) t;
+         return temp;
+      }
+      else
+      {
+         System.out.println("Can only put Garrison in City");
+         return null;
+      }
    }
 }

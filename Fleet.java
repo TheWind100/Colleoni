@@ -12,11 +12,19 @@ public class Fleet extends Unit
       super(own);
       sea = null;
    }
-   public Tile setTile( Tile newSea )
+   public Tile setTile( Tile t )
    {
-      Tile temp = sea;
-      sea = newSea;
-      return temp;   
+      if (!(t instanceof City))
+      {
+         Tile temp = sea;
+         sea = t;
+         return temp;
+      }
+      else
+      {
+         System.out.println("Can't put Fleet in City");
+         return null;
+      }
    }
    public Tile getTile()
    { 

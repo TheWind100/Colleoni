@@ -17,11 +17,19 @@ public class Army extends Unit
       super(own);
       province = prov;
    }
-   public Province setTile(Province prov)
+   public Tile setTile(Tile t)
    {
-      Province temp = province;
-      province = prov;
-      return temp;
+      if(t instanceof Province)
+      {
+         Province temp = province;
+         province = (Province) t;
+         return temp;
+      }
+      else
+      {
+         System.out.println("Can only put Army in Province");
+         return null;
+      }
    }
    public Province getTile()
    {

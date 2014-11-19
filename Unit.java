@@ -21,4 +21,5 @@ public abstract class Unit
       return owner;
    }
    abstract Tile getTile();
+   abstract Tile setTile(Tile t);
 }
