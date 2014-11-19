@@ -74,7 +74,7 @@ public class Province extends Tile
    {
       return famine;
    }
-   // end famine + rebellion methods
+   // end famine + rebellion method
    //start unit + fleet methods
    public Unit getUnit()
    {
@@ -96,5 +96,5 @@ public class Province extends Tile
    public void addCity(City c)
    {
       city = c;
-   }
+   } 
 }
