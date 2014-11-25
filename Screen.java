@@ -10,19 +10,17 @@ public class Screen extends JPanel
 {
    protected static boolean titleScreen;
    protected static boolean menu;
+   protected static boolean map;
 
    public Screen()
    {
-      titleScreen = true;
+      setLayout(GridBagLayout());
+      titleScreen = false;
       menu = false;
+      map = true;
       
       ImageDisplay.loadImages();
       
-   }
-   
-   public static void resetGame()
-   {
-      ImageDisplay.loadImages();
    }
    
    public void paintComponent(Graphics g)
