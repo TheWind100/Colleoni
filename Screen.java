@@ -1,6 +1,5 @@
-import java.awt.*;
-import javax.swing.*;
-
+import java.util.ArrayList;
+import javax.swing.JPanel;
 // Top down map movement.
 // Custom art style. Game Menu.
 // Screen before Game Menu. Settings page.
@@ -8,26 +7,15 @@ import javax.swing.*;
 
 public class Screen extends JPanel
 {
-   protected static boolean titleScreen;
-   protected static boolean menu;
-
+   protected int[] Pixels = new int[518400];
+   
    public Screen()
    {
-      titleScreen = true;
-      menu = false;
-      
-      ImageDisplay.loadImages();
       
    }
    
    public static void resetGame()
    {
-      ImageDisplay.loadImages();
-   }
-   
-   public void paintComponent(Graphics g)
-   {
-      super.paintComponent(g); 
-      ImageDisplay.drawMainScreen(g);
+      
    }
 }
