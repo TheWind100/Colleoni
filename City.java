@@ -1,4 +1,4 @@
-//kyle
+
 public class City extends Tile
 {
    private Garrison unit;

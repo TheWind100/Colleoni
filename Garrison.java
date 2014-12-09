@@ -1,4 +1,3 @@
-//kyle
 public class Garrison extends Unit
 {
    private City city;

@@ -1,5 +1,4 @@
 import java.util.*;
-// kyle
 public class Province extends Tile
 {
    private City city;

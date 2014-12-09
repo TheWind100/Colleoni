@@ -1,4 +1,3 @@
-//kyle
 public class Fleet extends Unit
 {
    private Tile sea;

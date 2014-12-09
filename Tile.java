@@ -1,5 +1,4 @@
 import java.util.*;
-// kyle
 public abstract class Tile
 {
    private String owner;

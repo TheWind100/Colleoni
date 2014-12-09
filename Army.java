@@ -1,4 +1,3 @@
-//kyle
 public class Army extends Unit
 {
    private Province province;

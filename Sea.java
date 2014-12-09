@@ -1,4 +1,3 @@
-// Jimsteroni
 import java.util.*;
 public class Sea extends Tile
 {

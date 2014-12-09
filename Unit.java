@@ -1,4 +1,3 @@
-// kyle
 public abstract class Unit
 {
    private String owner;
