@@ -8,6 +8,8 @@ public class Colleoni
 {
    public static JFrame frame;
    public static Screen screen;
+   public static final int width = 960;
+   public static final int height = 720;
 
    public static void main( String[] args )
    {

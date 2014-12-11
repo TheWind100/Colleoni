@@ -1,5 +1,15 @@
 import java.util.ArrayList;
 import javax.swing.JPanel;
+import java.awt.Canvas;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.image.BufferStrategy;
+import java.awt.image.BufferedImage;
+import java.awt.image.DataBufferInt;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+
 // Top down map movement.
 // Custom art style. Game Menu.
 // Screen before Game Menu. Settings page.
@@ -7,8 +17,6 @@ import javax.swing.JPanel;
 
 public class Screen extends JPanel
 {
-   protected int[] Pixels = new int[518400];
-   
    public Screen()
    {
       
@@ -18,4 +26,6 @@ public class Screen extends JPanel
    {
       
    }
+   
+   
 }
